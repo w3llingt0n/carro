@@ -1,0 +1,9 @@
+CarroController	KEYWORD1
+ligaMotor	KEYWORD2
+desligaMotor	KEYWORD2
+getNivelBateria	KEYWORD2
+getLeituraCorrente	KEYWORD2
+isSobrecarga	KEYWORD2
+isBateriaNivelCritico	KEYWORD2
+getSentidoCarro	KEYWORD2
+resetSobrecarga	KEYWORD2
