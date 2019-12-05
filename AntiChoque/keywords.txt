@@ -1,8 +1,0 @@
-getMediaMovel		KEYWORD2
-controleObstaculo	KEYWORD2
-comandoLed		KEYWORD2
-setVelocidade		KEYWORD2
-sensorFrontal		KEYWORD2
-sensoresLaterais	KEYWORD2
-sensorTraseiro		KEYWORD2
-sorteio			KEYWORD2

@@ -44,7 +44,9 @@ void changeDirection(CarroController carro, char c, int velocity, char direction
 /*##################################################################################################*/
     /********  Seguir em frente  ************/
     case 'f': 
-      Serial.println("Obstaculo detectado. Virando a direita.");
+      Serial.println(velocity);
+        Serial.println(velocity);
+          Serial.println(velocity);
       if(direcao.equals("Direita")){
         switch(velocity){
           case 48:
@@ -84,8 +86,9 @@ void changeDirection(CarroController carro, char c, int velocity, char direction
             carro.ligaMotor(1, 1, 9);
             break;
           case 57:
-            carro.ligaMotor(0, 1, 10);
-            carro.ligaMotor(1, 1, 0);
+            carro.ligaMotor(0, 0 , 0);
+            carro.ligaMotor(1, 0, 10);
+         ///   Serial.println(" ops");
             break;
         }
       }else if(direcao.equals("Esquerda")){
@@ -127,8 +130,9 @@ void changeDirection(CarroController carro, char c, int velocity, char direction
             carro.ligaMotor(1, 1, 10);
             break;
           case 57:
-            carro.ligaMotor(0, 1, 10);
-            carro.ligaMotor(1, 1, 0);
+            carro.ligaMotor(0, 0, 10);
+            carro.ligaMotor(1, 0, 0);
+            // Serial.println(" Bigal");
             break;
         }
       }

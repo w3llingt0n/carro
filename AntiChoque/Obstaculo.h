@@ -3,16 +3,15 @@
   Created by ITead studio. Alex, Apr 20, 2010.
   iteadstudio.com
 */
-#include "Ultrasonic.h"
-#include "Arduino.h"
-#include "DirectionOfCar.h"
 
-  
-int getMediaMovel(int distFrontal);
-int controleObstaculo(int distFrontal, int distDireito, int distEsquerdo);
+int getMediaMovelF(int distFrontal);
+bool controleObstaculo(int distFrontal, int distDireito, int distEsquerdo, int mediaT);
+
 void comandoLed(int led,bool liga);
+int getMediaMovelT(int distTraseiro);
 void setVelocidade(int velo);
 int sensorFrontal(int distFrontal);
-int sensoresLaterais(int distDireita, int distEsquerda);
-bool sensorTraseiro(int distTraseira);
+int sensoresLaterais(int distDireita, int distEsquerda, int mediaT);
+int sensorTraseiro(int mediaT, int distDireita, int distEsquerda);
 int sorteio();
+int getVelo();
